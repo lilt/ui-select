@@ -549,7 +549,7 @@ uis.controller('uiSelectCtrl',
     var container = $element.querySelectorAll('.ui-select-choices-content');
     var choices = container.querySelectorAll('.ui-select-choices-row');
     if (choices.length < 1) {
-      throw uiSelectMinErr('choices', "Expected multiple .ui-select-choices-row but got '{0}'.", choices.length);
+      return;
     }
 
     if (ctrl.activeIndex < 0) {
